@@ -1,384 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="Hexo Theme Keep">
-    <meta name="author" content="Zetian">
-    
-    <title>
-        
-            About |
-        
-        Notebook
-    </title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="/images/favicon.jpg">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/css/font-awesome.min.css">
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"wangzt568.github.io","root":"/","language":"en","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0099FF","avatar":"/images/avatar.jpg","favicon":"/images/favicon.jpg","article_img_align":"left","left_side_width":"260px","content_max_width":"1400px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/WallPaper1.jpg","description":"Keep writing and Keep loving."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"trigger":"auto","unescape":false,"preload":true},"code_copy":{"enable":true,"style":"default"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.0"};
-    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days age","week":"%s weeks age","month":"%s months age","year":"%s years age"};
-  </script>
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="ZetianNotes" type="application/atom+xml">
-</head>
+extends _partial/layout.pug
 
+block content
+  #page.hty-card
+    if page.type === 'tags'
+      +page_header(page.title, 'icon-price-tag-3-line')
+      .page-subtitle=_p('counter.tag_cloud', site.tags.length)
 
-<body>
-<div class="progress-bar-container">
-    
-        <span class="scroll-progress-bar"></span>
-    
+      if theme.wordcloud.enable
+        .wordcloud
+          canvas#wordcloud-canvas
+          #wordbox(hidden)
+        script(src=theme.vendors.wordcloud)
+        script.
+          function initWordCloud() {
+            const wordcloud_canvas = document.getElementById('wordcloud-canvas')
+            wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
+            wordcloud_canvas.height = !{theme.wordcloud.height}
+            let wordcloud_config = !{JSON.stringify(wordcloud_config('random-dark'))}
+            wordcloud_config.hover = function(item, dimension){
+              if (!dimension) {
+                wordbox.hidden = true
+                return;
+              }
+              wordbox.hidden = false
+              wordbox.setAttribute("style", `left:${dimension.x}px;top:${dimension.y}px;width:${dimension.w}px;height:${dimension.h}px;`)
+            }
+            wordcloud_config.click = function(tag){ window.location.href=tag[2] }
+            WordCloud(wordcloud_canvas, wordcloud_config);
+          }
 
-    
-        <span class="pjax-progress-bar"></span>
-        <span class="pjax-progress-icon">
-            <i class="fas fa-circle-notch fa-spin"></i>
-        </span>
-    
-</div>
+          function loadWordcloud() {
+            const script = document.createElement('script')
+            script.src = "#{theme.vendors.wordcloud}"
+            document.body.appendChild(script)
+            script.onload = () => {
+              initWordCloud()
+            }
+          }
+          
+          loadWordcloud();
+      else
+        .tag-cloud
+          - var start_color = theme.colors.tag_start_color || '#333'
+          - var end_color = theme.colors.tag_end_color || theme.colors.primary
+          .tag-cloud-tags!= tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color, end_color})
 
+    else if page.type === 'categories'
+      +page_header(page.title, 'icon-folder-2-line')
+      .page-subtitle=_p('counter.categories', site.categories.length)
+      .category-lists!= list_categories()
 
-<main class="page-container">
+    else if page.type === 'albums'
+      +page_header(page.title, theme.albums.icon)
+      .page-subtitle= _p('counter.albums', page.albums.length)
+      .album-list
+        for album in page.albums
+          a.album-list-item(href=url_for(album.url))
+            figure(title=album.desc)
+              img.album-list-cover(src=album.cover, loading="lazy", alt=album.caption, οnlοad="this.src=CONFIG.anonymous_image")
+              figcaption='「'+album.caption+'」'
 
-    
+    else
+      +page_header(page.title, page.icon)
+      article#page
+        section.post-body(itemprop='articleBody')
+          .post-content.markdown-body!= page.content
 
-    <div class="page-main-content">
+    //- default not display reward
+    if page.reward
+      include _partial/post/reward.pug
 
-        <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content">
-        <div class="left">
-            <a class="logo-title" href="/">
-                Notebook
-            </a>
-        </div>
-
-        <div class="right">
-            <div class="pc">
-                <ul class="menu-list">
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/"
-                            >
-                                HOME
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
-                                ARCHIVES
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
-                                CATEGORIES
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
-                                TAGS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/links"
-                            >
-                                LINKS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class="active"
-                               href="/about"
-                            >
-                                ABOUT
-                            </a>
-                        </li>
-                    
-                    
-                        <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/">HOME</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">ARCHIVES</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">CATEGORIES</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">TAGS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/links">LINKS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/about">ABOUT</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle">
-
-            <div class="main-content">
-
-                
-                    <div class="fade-in-down-animation">
-    <div class="page-template-container">
-        
-        
-        <div class="page-template-content markdown-body">
-            
-                <h1>about</h1>
-            
-        </div>
-        <div class="page-template-comments">
-            
-        </div>
-    </div>
-</div>
-
-
-                
-            </div>
-
-        </div>
-
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
-            
-              <span>2021</span>&nbsp;-&nbsp;
-            
-            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Zetian</a>
-        </div>
-        
-            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <div class="website-count info-item">
-                
-                    <span id="busuanzi_container_site_uv">
-                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv">
-                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
-                    </span>
-                
-            </div>
-        
-        <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.0</a>
-        </div>
-        
-    </div>
-</footer>
-
-        </div>
-    </div>
-
-    
-
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
-
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-            <li class="tools-item rss flex-center">
-                <a class="flex-center"
-                   href="/atom.xml"
-                   target="_blank"
-                >
-                    <i class="fas fa-rss"></i>
-                </a>
-            </li>
-        
-
-        
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
-    </ul>
-</div>
-
-    </div>
-
-    
-
-    <div class="image-viewer-container">
-    <img src="">
-</div>
-
-
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="Search..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="popup-btn-close">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-</main>
-
-
-
-<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/dark-light-toggle.js"></script>
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/local-search.js"></script>
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/code-copy.js"></script>
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/lazyload.js"></script>
-
-
-<div class="post-scripts pjax">
-    
-</div>
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.0/source/js/libs/pjax.min.js"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const pjax = new Pjax({
-            selectors: [
-                'head title',
-                '.page-container',
-                '.pjax'
-            ],
-            history: true,
-            debug: false,
-            cacheBust: false,
-            timeout: 0,
-            analytics: false,
-            currentUrlFullReload: false,
-            scrollRestoration: false,
-            // scrollTo: true,
-        });
-
-        document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart();
-        });
-
-        document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd();
-            pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-            KEEP.refresh();
-        });
-    });
-</script>
-
-
-
-</body>
-</html>

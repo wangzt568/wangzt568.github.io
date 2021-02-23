@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>10_Regular_Expression_Matching</title>
-    <url>/2020/07/12/10-Regular-Expression-Matching/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1286.Iterator for Combination</title>
     <url>/2021/02/16/1286-Iterator-for-Combination/</url>
     <content><![CDATA[]]></content>
@@ -21,191 +9,6 @@
       </categories>
       <tags>
         <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>37_Sudoku_Solver</title>
-    <url>/2020/07/10/37-Sudoku-Solver/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-        <tag>Backtrack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>25. Reverse Nodes in k-Group</title>
-    <url>/2020/07/20/25-Reverse-Nodes-in-k-Group/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>39_Combination_Sum</title>
-    <url>/2020/07/10/39-Combination-Sum/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-        <tag>Backtrack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>40_Combination_Sum_II</title>
-    <url>/2020/07/11/40-Combination-Sum-II/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-        <tag>Backtrack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>41_First_Missing_Positive</title>
-    <url>/2020/07/11/41-First-Missing-Positive/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>43_Multiply_Strings</title>
-    <url>/2020/07/12/43-Multiply-Strings/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>42_Trapping_Rain_Water</title>
-    <url>/2020/07/11/42-Trapping-Rain-Water/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>448. Find All Numbers Disappeared in an Array</title>
-    <url>/2020/08/21/448-Find-All-Numbers-Disappeared-in-an-Array/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>E</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>51.N-Queens</title>
-    <url>/2020/07/18/51-N-Queens/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>53.Maximum Subarray</title>
-    <url>/2020/07/18/53-Maximum-Subarray/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>E</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>52.N-Queens2</title>
-    <url>/2020/07/18/52-N-Queens2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>H</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>54.Spiral Matrix</title>
-    <url>/2020/07/19/54-Spiral-Matrix/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>559.Maximum Depth of N-ary</title>
-    <url>/2020/08/21/559-Maximum-Depth-of-N-ary/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>E</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-        <tag>tree</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>56. Merge Intervals</title>
-    <url>/2020/07/19/56-Merge-Intervals/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>55. Jump Game</title>
-    <url>/2020/07/19/55-Jump-Game/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leet</category>
-        <category>M</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-        <tag>Backtrack</tag>
       </tags>
   </entry>
   <entry>
@@ -220,72 +23,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hibernate4</title>
-    <url>/2020/07/12/Hibernate4/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Hibernate</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaCollections</title>
-    <url>/2020/07/26/JavaCollections/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaSchema</title>
-    <url>/2020/07/11/JavaSchema/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MarlabSpringFrameWork</title>
-    <url>/2020/07/12/MarlabSpringFrameWork/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>KMPAlgorithm</title>
-    <url>/2020/07/15/KMP/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Algo</category>
-      </categories>
-      <tags>
-        <tag>KMP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>My first passage</title>
-    <url>/2020/07/10/My-first-passage/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>log</category>
-      </categories>
-      <tags>
-        <tag>log</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Multi-threading-Concepts</title>
     <url>/2021/02/14/Multi-threading-Concepts/</url>
     <content><![CDATA[]]></content>
@@ -294,52 +31,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot with H2/MySQL</title>
-    <url>/2020/08/16/Spring-Boot-with-H2-MySQL/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Spring</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>database</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringCloud-Eureka</title>
-    <url>/2020/08/18/SpringCloud-Eureka/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>SpringJdbc</title>
-    <url>/2020/07/19/SpringJdbc/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Spg</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-        <tag>Jdbc</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringCloud</title>
-    <url>/2020/08/18/SpringCloud/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Thymeleaf with spring</title>
-    <url>/2020/08/06/Thymeleaf-with-spring/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Frontend</category>
-        <category>Thymeleaf</category>
-      </categories>
-      <tags>
-        <tag>Thymeleaf</tag>
       </tags>
   </entry>
   <entry>
@@ -352,50 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexoBlogInstruction</title>
-    <url>/2020/07/16/hexoBlogInstruction/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Conf</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/02/14/hello-world/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>MD</category>
-      </categories>
-      <tags>
-        <tag>MarkDown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2021/02/14/test/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>xml</title>
-    <url>/2020/07/14/xml/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Angular Start</title>
     <url>/2020/08/17/Angular-Start/</url>
     <content><![CDATA[]]></content>
@@ -404,49 +51,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Java8 Tutorial</title>
-    <url>/2020/08/03/Java8-Tutorial/</url>
+    <title>KafkaBasic</title>
+    <url>/2021/02/23/KafkaBasic/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Java</category>
-        <category>Java8</category>
+        <category>Kafka</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>Java8</tag>
+        <tag>MessageBroker</tag>
+        <tag>Kafka</tag>
       </tags>
   </entry>
   <entry>
-    <title>JavaReflection</title>
-    <url>/2020/07/11/JavaReflection/</url>
+    <title>MultithreadingBasicTheory</title>
+    <url>/2021/02/23/MultithreadingBasicTheory/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>Java</category>
+        <category>Multithreading</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring5AOP</title>
-    <url>/2020/07/17/Spring5AOP/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Spg</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring5IOC</title>
-    <url>/2020/07/12/Spring5IOC/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Spg</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
+        <tag>Multithreading</tag>
       </tags>
   </entry>
   <entry>

@@ -1,96 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>1286.Iterator for Combination</title>
-    <url>/2021/02/16/1286-Iterator-for-Combination/</url>
-    <content><![CDATA[]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>KafkaBasic</title>
+      <link href="2021/02/23/KafkaBasic/"/>
+      <url>2021/02/23/KafkaBasic/</url>
+      
+      
       <categories>
-        <category>Leetcode</category>
+          
+          <category> Kafka </category>
+          
       </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Enums</title>
-    <url>/2021/02/14/Enums-1/</url>
-    <content><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> MessageBroker </tag>
+            
+            <tag> Kafka </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MultithreadingBasicTheory</title>
+      <link href="2021/02/23/MultithreadingBasicTheory/"/>
+      <url>2021/02/23/MultithreadingBasicTheory/</url>
+      
+      
       <categories>
-        <category>Java</category>
+          
+          <category> Multithreading </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Multi-threading-Concepts</title>
-    <url>/2021/02/14/Multi-threading-Concepts/</url>
-    <content><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> Multithreading </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>1286.Iterator for Combination</title>
+      <link href="2021/02/16/1286-Iterator-for-Combination/"/>
+      <url>2021/02/16/1286-Iterator-for-Combination/</url>
+      
+      
       <categories>
-        <category>Multi-threading</category>
+          
+          <category> Leetcode </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>TypeScript</title>
-    <url>/2020/08/17/TypeScript/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>TypeScript</tag>
-        <tag>Frontend</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Angular Start</title>
-    <url>/2020/08/17/Angular-Start/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Angular</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>KafkaBasic</title>
-    <url>/2021/02/23/KafkaBasic/</url>
-    <content><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Multi-threading-Concepts</title>
+      <link href="2021/02/14/Multi-threading-Concepts/"/>
+      <url>2021/02/14/Multi-threading-Concepts/</url>
+      
+      
       <categories>
-        <category>Kafka</category>
+          
+          <category> Multi-threading </category>
+          
       </categories>
-      <tags>
-        <tag>MessageBroker</tag>
-        <tag>Kafka</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MultithreadingBasicTheory</title>
-    <url>/2021/02/23/MultithreadingBasicTheory/</url>
-    <content><![CDATA[]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Enums</title>
+      <link href="2021/02/14/Enums-1/"/>
+      <url>2021/02/14/Enums-1/</url>
+      
+      
       <categories>
-        <category>Multithreading</category>
+          
+          <category> Java </category>
+          
       </categories>
-      <tags>
-        <tag>Multithreading</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>about</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>categories</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/data/sentences.json</url>
-    <content><![CDATA[]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Angular Start</title>
+      <link href="2020/08/17/Angular-Start/"/>
+      <url>2020/08/17/Angular-Start/</url>
+      
+      
+      
+        <tags>
+            
+            <tag> Angular </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TypeScript</title>
+      <link href="2020/08/17/TypeScript/"/>
+      <url>2020/08/17/TypeScript/</url>
+      
+      
+      
+        <tags>
+            
+            <tag> TypeScript </tag>
+            
+            <tag> Frontend </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>about</title>
+      <link href="about/index.html"/>
+      <url>about/index.html</url>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="categories/index.html"/>
+      <url>categories/index.html</url>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="tags/index.html"/>
+      <url>tags/index.html</url>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="data/sentences.json"/>
+      <url>data/sentences.json</url>
+      
+    </entry>
+    
+    
+  
 </search>

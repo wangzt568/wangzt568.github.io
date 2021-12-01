@@ -34,23 +34,6 @@
       </tags>
   </entry>
   <entry>
-    <title>TypeScript</title>
-    <url>/2020/08/17/TypeScript/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>TypeScript</tag>
-        <tag>Frontend</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Angular Start</title>
-    <url>/2020/08/17/Angular-Start/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Angular</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>KafkaBasic</title>
     <url>/2021/02/23/KafkaBasic/</url>
     <content><![CDATA[]]></content>
@@ -74,6 +57,23 @@
       </tags>
   </entry>
   <entry>
+    <title>TypeScript</title>
+    <url>/2020/08/17/TypeScript/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>TypeScript</tag>
+        <tag>Frontend</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Angular Start</title>
+    <url>/2020/08/17/Angular-Start/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Angular</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>about</title>
     <url>/about/index.html</url>
     <content><![CDATA[]]></content>
@@ -84,13 +84,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>tags</title>
-    <url>/tags/index.html</url>
+    <title></title>
+    <url>/data/sentences.json</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/data/sentences.json</url>
+    <title>tags</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

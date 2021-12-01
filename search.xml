@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1286.Iterator for Combination</title>
-    <url>/2021/02/16/1286-Iterator-for-Combination/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Leetcode</category>
-      </categories>
-      <tags>
-        <tag>Leetcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Enums</title>
     <url>/2021/02/14/Enums-1/</url>
     <content><![CDATA[]]></content>
@@ -20,6 +9,17 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1286.Iterator for Combination</title>
+    <url>/2021/02/16/1286-Iterator-for-Combination/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Leetcode</category>
+      </categories>
+      <tags>
+        <tag>Leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -74,23 +74,23 @@
       </tags>
   </entry>
   <entry>
-    <title>about</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>categories</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/data/sentences.json</url>
+    <title>about</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>tags</title>
     <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/data/sentences.json</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

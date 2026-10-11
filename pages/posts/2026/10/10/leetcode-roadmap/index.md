@@ -3,6 +3,7 @@ title: "LeetCode Study Notes: 360 Medium and Hard Problems"
 date: "2026-10-10T00:00:00-07:00"
 updated: "2026-10-10T00:00:00-07:00"
 layout: post
+from: "/posts/2026/10/10/faang-leetcode-roadmap/"
 top: 100
 categories: ["Leetcode"]
 tags: ["Leetcode", "Algorithms", "Study Notes"]

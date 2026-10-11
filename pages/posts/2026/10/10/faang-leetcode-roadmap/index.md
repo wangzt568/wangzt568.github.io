@@ -1,12 +1,12 @@
 ---
-title: "FAANG LeetCode Roadmap: 360 Medium and Hard Problems"
+title: "LeetCode Study Notes: 360 Medium and Hard Problems"
 date: "2026-10-10T00:00:00-07:00"
 updated: "2026-10-10T00:00:00-07:00"
 layout: post
 top: 100
 categories: ["Leetcode"]
-tags: ["Leetcode", "FAANG", "Interview", "Algorithms"]
-description: "A study roadmap covering 270 Medium and 90 Hard LeetCode problems for FAANG coding interviews."
+tags: ["Leetcode", "Algorithms", "Study Notes"]
+description: "My study notes covering 270 Medium and 90 Hard LeetCode problems, coding patterns, and Python examples."
 ---
 
 360 questions: **270 Medium + 90 Hard**, grouped by coding pattern.

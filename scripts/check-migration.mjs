@@ -3,7 +3,13 @@ import path from 'node:path'
 import assert from 'node:assert/strict'
 import { parseHTML } from 'linkedom'
 
-const home = parseHTML(fs.readFileSync('dist/index.html', 'utf8')).document
+// The homepage is paginated; the archive is the complete post listing.
+const archives = parseHTML(fs.readFileSync('dist/archives/index.html', 'utf8')).document
+const archiveLinks = new Set(
+  [...archives.querySelectorAll('a[href]')].map(link =>
+    decodeURI(link.getAttribute('href')).replace(/\/$/, ''),
+  ),
+)
 const search = JSON.parse(fs.readFileSync('dist/valaxy-fuse-list.json', 'utf8'))
 const feed = fs.readFileSync('dist/atom.xml', 'utf8')
 const normalize = text => text.replace(/\s+/g, ' ').trim()
@@ -22,7 +28,7 @@ function check(directory) {
       assert(oldPage.querySelector('link[rel=canonical]')?.getAttribute('href')?.includes('/posts' + route.slice(0, -1)), `Missing old URL redirect: ${route}`)
       assert(body, `Missing rendered content: ${route}`)
       const title = original.querySelector('h1.post-title').textContent
-      assert(home.body.textContent.includes(title), `Missing home listing: ${title}`)
+      assert(archiveLinks.has('/posts' + route.slice(0, -1)), `Missing archive listing: ${title}`)
       assert(search.some(item => decodeURI(item.link) === '/posts' + route.slice(0, -1)), `Missing search entry: ${route}`)
       assert(feed.includes(`https://wangzt568.github.io/posts${route}`), `Missing feed entry: ${route}`)
       for (const heading of source.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')) {
@@ -59,4 +65,4 @@ for (const kind of ['categories', 'tags', 'archives']) {
   verifyRedirects(`legacy/hexo/${kind}`)
 }
 for (const page of ['archives', 'categories', 'tags', 'about']) assert(fs.existsSync(`dist/${page}/index.html`), `Missing page: ${page}`)
-console.log(`Verified ${count} posts, original URLs, heading anchors, code blocks, images, home listings, search, feeds and legacy redirects`)
+console.log(`Verified ${count} posts, original URLs, heading anchors, code blocks, images, archive listings, search, feeds and legacy redirects`)

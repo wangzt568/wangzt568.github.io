@@ -1,0 +1,11 @@
+// Restore the original Hexo backgrounds before the client mounts.
+:root {
+  --yun-bg-img: url('/img/cover/nightsearch2.png');
+  --yun-bg-img-opacity: 1;
+  --yun-sidebar-bg-img: url('/img/cover/cover1.jpg');
+}
+
+html.dark {
+  --yun-bg-img: url('/img/cover/night1.png');
+  --yun-sidebar-bg-img: none;
+}
